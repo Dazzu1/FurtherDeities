@@ -1,0 +1,39 @@
+BACKUP ~FurtherDeities/Backup~
+AUTHOR ~Dazzu1~
+VERSION ~0.0.0.1~
+
+LANGUAGE ~English~
+
+ALWAYS
+
+INCLUDE ~FurtherDeities/Lib/a7#add_kit_ee.tpa~
+INCLUDE ~FurtherDeities/Tra/Lang/English/Spheres.tra~
+INCLUDE ~FurtherDeities/Tra/Lang/English/Setup.tra~
+INCLUDE ~FurtherDeities/Tra/Lang/English/FurtherDeities.tra~
+
+LAF ADD_KIT_EX
+  INT_VAR
+    kit class      =  3
+    mixed          = @4001
+    lower          = @4000
+    help           = @4002
+ADD_KIT ~7DUrog~
+    ~7DUrog 0 0 0 0 1 1 0 1~
+    ~7DUrog 0 0 0 0 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+	~7DUrog 3 3 3 3 13 3~
+	~7DUrog 0 0 0 0 0 0~
+	~7DUrog 3 3 3 3 13 3~
+        ~7DUrog 3 3 3 3 13 3~
+	~7DUrog 0 1 0 0 0 0 0 0 0~
+	~7DUrog 1 0 0 0 0 0~
+LAF fl#add_kit_ee
+	STR_VAR
+		kit_name = ~7DUrog~
+		clascolr = ~43 87 172 253 37~
+		clsrcreq = ~1 1 1 1 1 1 1~
+//Spells
+
+COPY_EXISTING	~%spell_res%.spl~	~override/7dUrog02.spl~
+LPM ~SPELL_TO_INNATE~
+
+
