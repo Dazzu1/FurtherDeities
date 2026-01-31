@@ -34,9 +34,15 @@ LAF fl#add_kit_ee
 		kit_name = ~7DUrog~
 		clascolr = ~43 87 172 253 37~
 		clsrcreq = ~0 0 0 0 1 0 0~
+//Sphere
+
+ACTION_IF FILE_EXISTS_IN_GAME ~RASPHERE.marker~ BEGIN
+
+	LAF	BUILD_SPHERE_ACCESS	STR_VAR	kitname = ~RAUROG~  clabfile = ~RAUROG~	END
 //Spells
 
 COPY_EXISTING	~%spell_res%.spl~	~override/7dUrog02.spl~
+
 LPM ~SPELL_TO_INNATE~
 
 
