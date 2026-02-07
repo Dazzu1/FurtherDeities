@@ -38,7 +38,7 @@ LAF fl#add_kit_ee
 
 ACTION_IF FILE_EXISTS_IN_GAME ~RASPHERE.marker~ BEGIN
 
-	LAF	BUILD_SPHERE_ACCESS	STR_VAR	kitname = ~RAUROG~  clabfile = ~RAUROG~	END
+	LAF	BUILD_SPHERE_ACCESS	STR_VAR	kitname = ~7DUROG~  clabfile = ~7DUROG~	END
 //Spells
 
 COPY_EXISTING	~%spell_res%.spl~	~override/7dUrog02.spl~
